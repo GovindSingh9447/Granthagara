@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context="com.ranawat.Adding_Section.NotesAddActivity">
+
+
+    <!--Toolbar-->
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <!-- Back Button-->
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"/>
+
+        <!--Image Icon-->
+        <ImageView
+            android:id="@+id/iconlogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/backbtn"
+            android:src="@drawable/logo5"/>
+
+        <!-- Title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Add New Notes"
+            android:textColor="@color/white"
+            android:textSize="28sp"/>
+
+        <!-- Attach pdf button -->
+        <ImageButton
+            android:id="@+id/attachbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_attach_white"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginTop="225dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+    <!--Input Title-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_pdf_gray"
+            android:drawablePadding="10dp"
+            android:hint="Note Title"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Input Decsp-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/titleTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/descTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_pdf_gray"
+            android:drawablePadding="10dp"
+            android:hint="Note Description"
+            android:inputType="textMultiLine|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senderTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/descTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/senderTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_pdf_gray"
+            android:drawablePadding="10dp"
+            android:hint="Source Name"
+            android:inputType="textMultiLine|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/SubjectNameT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senderTil"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="Subject Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray81"
+        android:textSize="16dp"/>
+
+
+    <TextView
+        android:id="@+id/semesterNameT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SubjectNameT"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="Semester Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray81"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/courseNameT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semesterNameT"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="Course Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray81"
+        android:textSize="16dp"/>
+
+
+    <TextView
+        android:id="@+id/collagenames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseNameT"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="College Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray81"
+        android:textSize="16dp"/>
+
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_btn01"
+        android:text="Submit"
+        android:layout_below="@+id/collagenames"
+        android:textColor="@color/white"/>
+
+
+            <Button
+                android:id="@+id/ViewUserNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:text="View Users Notes"
+                android:visibility="invisible"
+                android:layout_below="@+id/submit"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

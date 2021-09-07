@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context="com.ranawat.Users_Sections.UserUploadActivity">
+
+
+
+    <!--Toolbar-->
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <!-- Back Button-->
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"/>
+
+        <!--Image Icon-->
+        <ImageView
+            android:id="@+id/iconlogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/backbtn"
+            android:src="@drawable/logo5"/>
+
+        <!-- Title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="Upload Notes"
+            android:textColor="@color/white"
+            android:textSize="28sp"/>
+
+        <!-- Attach pdf button -->
+        <ImageButton
+            android:id="@+id/attachbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_attach_white"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@id/noAccountTv"
+        android:layout_marginTop="225dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <!--Input Title-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_pdf_gray"
+            android:drawablePadding="10dp"
+            android:hint="Notes Title"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Input Decsp-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/titleTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/descTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_pdf_gray"
+            android:drawablePadding="10dp"
+            android:hint="Notes Description"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textMultiLine|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Input Decsp-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/descTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/subTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_category_gray"
+            android:drawablePadding="10dp"
+            android:hint="Subject"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!--Input Decsp-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/semTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/subTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/semTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_category_gray"
+            android:drawablePadding="10dp"
+            android:hint="Semester"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Input Decsp-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/courseTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/semTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/courseTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_category_gray"
+            android:drawablePadding="10dp"
+            android:hint="Course"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Input Decsp-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/collageTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/courseTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/collageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_category_gray"
+            android:drawablePadding="10dp"
+            android:hint="College"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray81"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_btn01"
+        android:text="Submit"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_below="@+id/collageTil"
+        android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/noAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:padding="10dp"
+        android:text="@string/your_notes_will_uploaded_once_it_verified_by_the_admin_please_show_some_patience"
+        android:textColor="@color/black"/>
+
+
+
+</RelativeLayout>

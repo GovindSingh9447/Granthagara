@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/back01"
+tools:context="com.ranawat.Adding_Section.SubjectAddActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/shape_toolbar01">
+
+    <ImageButton
+        android:id="@+id/gobackbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_white"
+        android:background="@android:color/transparent"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/iconTv"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/logo5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="+ Add New Subject"
+        android:textColor="@color/white"
+        android:textSize="28sp"/>
+
+</RelativeLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/subjectNameT"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hintEnabled="false"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="225dp"
+    android:layout_marginEnd="30dp">
+
+    <EditText
+        android:id="@+id/subjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawablePadding="18dp"
+        android:hint="Subject Name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/semesterNameT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectNameT"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="Semester Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray81"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/courseNameT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semesterNameT"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="Course Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray81"
+        android:textSize="16dp"/>
+
+
+    <TextView
+        android:id="@+id/collagenames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseNameT"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_editbox01"
+        android:drawableStart="@drawable/ic_category_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="College Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray81"
+        android:textSize="16dp"/>
+
+
+
+
+    <Button
+    android:id="@+id/submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="28dp"
+    android:background="@drawable/shape_btn01"
+    android:text="Submit"
+    android:layout_below="@+id/collagenames"
+    android:textColor="@color/white"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ranawat.collagenotes">
+    <!-- all required Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.ranawat.Admin_Sections.AdminChatDetailsActivity"></activity>
+        <activity android:name="com.ranawat.Admin_Sections.Admin_Chat_Users_Activity" />
+        <activity android:name="com.ranawat.Admin_Sections.UserListActivity" />
+        <activity android:name="com.ranawat.Admin_Sections.AdminMenuActivity" />
+        <activity android:name="com.ranawat.Admin_Sections.UserSentMessagesActivity" />
+        <activity android:name="com.ranawat.Admin_Sections.UserUploadAdminActivity" />
+        <activity android:name="com.ranawat.Users_Sections.NotesViewUserActivity" />
+        <activity android:name="com.ranawat.Users_Sections.UserPolicyActivity" />
+        <activity android:name="com.ranawat.Users_Sections.UserUploadActivity" />
+        <activity android:name="com.ranawat.Users_Sections.MenuUsersActivity" />
+        <activity android:name="com.ranawat.Users_Sections.NotesUsersActivity" />
+        <activity android:name="com.ranawat.Users_Sections.SubjectUsersActivity" />
+        <activity android:name="com.ranawat.Users_Sections.SemesterUsersActivity" />
+        <activity android:name="com.ranawat.Users_Sections.CourseUsersActivity" />
+        <activity android:name=".NotesViewerAdminActivity" />
+        <activity android:name="com.ranawat.Admin_Sections.NotesAdminActivity" />
+        <activity android:name="com.ranawat.Admin_Sections.SubjectAdminActivity" />
+        <activity android:name="com.ranawat.Admin_Sections.SemesterAdminActivity" />
+        <activity android:name="com.ranawat.Admin_Sections.CourseAdminActivity" />
+        <activity android:name="com.ranawat.Adding_Section.NotesAddActivity" />
+        <activity android:name="com.ranawat.Adding_Section.SubjectAddActivity" />
+        <activity android:name="com.ranawat.Adding_Section.SemesterAddActivity" />
+        <activity android:name="com.ranawat.Adding_Section.CourseAddActivity" />
+        <activity android:name="com.ranawat.Adding_Section.Collage_University_Added_Activity" />
+        <activity android:name=".DashboardAdminActivity" />
+        <activity android:name=".DashboardUserActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

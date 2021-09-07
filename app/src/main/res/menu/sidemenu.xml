@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/homeMenu"
+            android:icon="@drawable/ic_back"
+            android:title="Home"
+            />
+
+        <item android:id="@+id/chatMenu"
+            android:icon="@drawable/ic_back"
+            android:title="chat"
+            />
+
+        <item android:id="@+id/uploadMenu"
+            android:icon="@drawable/ic_back"
+            android:title="Upload"
+            />
+
+        <item android:title="Sharing">
+
+            <menu>
+
+                <item android:id="@+id/shareMenu"
+                    android:icon="@drawable/ic_back"
+                    android:title="Share"/>
+
+                <item android:id="@+id/refereMenu"
+                    android:icon="@drawable/ic_back"
+                    android:title="Refer"/>
+
+
+
+            </menu>
+        </item>
+
+        <item android:id="@+id/policyMenu"
+            android:icon="@drawable/ic_back"
+            android:title="policy"
+            />
+
+
+
+
+
+    </group>
+
+</menu>

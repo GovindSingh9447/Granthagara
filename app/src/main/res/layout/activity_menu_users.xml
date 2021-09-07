@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context="com.ranawat.Users_Sections.MenuUsersActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <ImageButton
+            android:id="@+id/gobackbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:padding="5dp"/>
+
+        <ImageButton
+            android:id="@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="15dp"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_switch" />
+
+
+        <ImageView
+            android:id="@+id/iconTv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/logo5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="College Notes"
+            android:textColor="@color/white"
+            android:textSize="28sp"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/catTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="30dp">
+
+        <EditText
+            android:id="@+id/msgBox"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@drawable/shape_editbox01"
+            android:drawableStart="@drawable/ic_category_gray"
+            android:drawablePadding="18dp"
+            android:hint="Contact with admin....."
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textMultiLine"
+            android:maxLines="7"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_btn01"
+        android:text="Send"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_below="@+id/catTv"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/adUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_btn01"
+        android:text="Upload Notes"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_below="@id/send"
+        android:textColor="@color/white"/>
+
+
+
+
+    <Button
+        android:id="@+id/adshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_btn01"
+        android:text="Share"
+        android:fontFamily="@font/ubuntu_regular"
+        android:drawableEnd="@drawable/ic_share"
+        android:drawablePadding="7dp"
+        android:layout_below="@id/adUpload"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/rPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adshare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textSize="20dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="50dp"
+        android:text="@string/read_policy" />
+
+
+</RelativeLayout>

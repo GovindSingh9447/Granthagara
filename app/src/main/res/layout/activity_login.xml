@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarL"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo5"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/icon"
+           android:layout_centerHorizontal="true"
+           android:text="@string/please_login"
+           android:fontFamily="@font/ubuntu_regular"
+           android:textColor="@color/white"
+           android:textSize="28dp"
+           android:layout_marginTop="10dp"
+          />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_above="@id/noAccountTv"
+        android:layout_marginTop="225dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTil"
+                android:layout_width="match_parent"
+                app:hintEnabled="false"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_editbox01"
+                    android:drawableStart="@drawable/ic_email_gray"
+                    android:drawablePadding="18dp"
+                    android:hint="@string/email"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:inputType="textEmailAddress"
+                    android:padding="18dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTil"
+                android:layout_width="match_parent"
+                android:layout_below="@id/emailTil"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_editbox01"
+                    android:drawableStart="@drawable/ic_lock_gray"
+                    android:drawablePadding="18dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:padding="18dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/forgotTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordTil"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="@string/forget_password"/>
+
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forgotTv"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_btn01"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/noAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="@string/new_user_signup"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
