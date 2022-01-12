@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_admin_menu.xml" value="0.23595505617977527" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_menu_users.xml" value="0.23595505617977527" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/row_notes.xml" value="0.23595505617977527" />
+        <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/activity_collage__university__added_.xml" value="0.25" />
+        <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/activity_collages__users.xml" value="0.16979166666666667" />
+        <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/activity_courese__users_.xml" value="0.16979166666666667" />
+        <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/row_collage.xml" value="0.5" />
+        <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/row_course.xml" value="0.16979166666666667" />
+        <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/row_course_users.xml" value="0.16979166666666667" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

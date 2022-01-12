@@ -1,8 +1,12 @@
 package com.ranawat.collagenotes.Adapter;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +23,8 @@ import com.github.barteksc.pdfviewer.listener.OnErrorListener;
 import com.github.barteksc.pdfviewer.listener.OnPageErrorListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
@@ -44,9 +50,19 @@ public class AdapterNotes extends RecyclerView.Adapter<AdapterNotes.HolderNotesA
     //binding
     private RowNotesBinding binding;
 
+    //progessDialog
+    private ProgressDialog progressDialog;
+
+    private static final String Tag="NOTES_REVIEW_TAG";
+
     public AdapterNotes(Context context, ArrayList<ModelNotes> notesArrayList) {
         this.context = context;
         this.notesArrayList = notesArrayList;
+
+        //init progress dialog
+        progressDialog = new ProgressDialog(context);
+        progressDialog.setTitle("Please Wait");
+        progressDialog.setCanceledOnTouchOutside(false);
     }
 
     @NonNull
@@ -86,6 +102,18 @@ public class AdapterNotes extends RecyclerView.Adapter<AdapterNotes.HolderNotesA
         loadNotesSize(modelNotes,holder);
 
 
+
+        //handel click with 2 options 1) EDIT 2) DELE TE
+        holder.moreBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moreOptionDialogs(modelNotes, holder);
+
+
+            }
+        });
+
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,6 +127,60 @@ public class AdapterNotes extends RecyclerView.Adapter<AdapterNotes.HolderNotesA
 
     }
 
+    private void moreOptionDialogs(ModelNotes modelNotes, HolderNotesAdmin holder) {
+
+        //option to show in dialog
+        String[] options ={"Edit", "Delete"};
+
+        //alert dialog
+        AlertDialog.Builder builder=new AlertDialog.Builder(context);
+        builder.setTitle("Choose Options")
+                .setItems(options, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                        //handel dialog option click
+
+                        if(i==0){
+                            //edit  Click
+                        }
+                        else if(i==1){
+                            //Delete Click
+                            DeleteNotes(modelNotes,holder);
+                        }
+                    }
+                })
+                .show();
+    }
+
+    private void DeleteNotes(ModelNotes modelNotes, HolderNotesAdmin holder) {
+
+        String notesId=modelNotes.getId();
+        String notesUrl=modelNotes.getUrl();
+        String notesTitle =modelNotes.getTitle();
+
+        progressDialog.setMessage("Deleting "+notesTitle+ ".....");
+        progressDialog.show();
+
+        //deleting from storage
+        StorageReference storageReference=FirebaseStorage.getInstance().getReferenceFromUrl(notesUrl);
+        storageReference.delete()
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+
+                        DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+
+                        progressDialog.dismiss();
+                    }
+                });
+
+    }
     private void loadNotesSize(ModelNotes modelNotes, HolderNotesAdmin holder) {
 
         //using url we can get file and its metadata from firebase storage
@@ -209,6 +291,7 @@ public class AdapterNotes extends RecyclerView.Adapter<AdapterNotes.HolderNotesA
         TextView notesSize;
         TextView notesDate;
         ImageButton btnbac;
+        ImageButton moreBtn;
 
 
 

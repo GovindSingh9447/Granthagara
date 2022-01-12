@@ -96,9 +96,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
             android:padding="5dp"
-            android:src="@drawable/ic_more_blac"
-            android:background="@android:color/transparent"/>
+            android:src="@drawable/ic_more_blac" />
 
     </RelativeLayout>
 
