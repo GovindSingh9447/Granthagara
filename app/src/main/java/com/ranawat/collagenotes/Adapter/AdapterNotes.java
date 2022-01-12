@@ -169,7 +169,25 @@ public class AdapterNotes extends RecyclerView.Adapter<AdapterNotes.HolderNotesA
                     @Override
                     public void onSuccess(Void unused) {
 
-                        DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
+                        DatabaseReference reference= FirebaseDatabase.getInstance().getReference("Notes");
+                        reference.child(notesId)
+                                .removeValue()
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+
+                                        progressDialog.dismiss();
+                                        Toast.makeText(context, "Book is Succesfully Delete", Toast.LENGTH_SHORT).show();
+                                    }
+                                })
+                                .addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+
+                                        progressDialog.dismiss();
+                                        Toast.makeText(context, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                                    }
+                                });
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
