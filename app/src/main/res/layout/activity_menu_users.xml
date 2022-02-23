@@ -87,14 +87,14 @@
         android:id="@+id/send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/shape_btn01"
-        android:text="Send"
-        android:fontFamily="@font/ubuntu_regular"
         android:layout_below="@+id/catTv"
-        android:textColor="@color/white"/>
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/shape_btn01"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Send"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/adUpload"

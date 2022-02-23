@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //setup progress dailog
         progressDialog =new ProgressDialog(this);
-        progressDialog.setTitle("Please Waite");
+        progressDialog.setTitle("Please Wait");
         progressDialog.setCanceledOnTouchOutside(false);
 
 
@@ -166,25 +166,19 @@ public class RegisterActivity extends AppCompatActivity {
         DatabaseReference ref= FirebaseDatabase.getInstance().getReference("Users");
         ref.child(uid)
                 .setValue(hashMap)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        //data added to db
-                        progressDialog.dismiss();
-                        Toast.makeText(RegisterActivity.this, "Account Created...", Toast.LENGTH_SHORT).show();
-                        //
-                        startActivity(new Intent(RegisterActivity.this, DashboardUserActivity.class ));
-                        finish();
+                .addOnSuccessListener(aVoid -> {
+                    //data added to db
+                    progressDialog.dismiss();
+                    Toast.makeText(RegisterActivity.this, "Account Created...", Toast.LENGTH_SHORT).show();
+                    //starting new activity
+                    startActivity(new Intent(RegisterActivity.this, DashboardUserActivity.class ));
+                    finish();
 
-                    }
                 })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        progressDialog.dismiss();
-                        Toast.makeText(RegisterActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                .addOnFailureListener(e -> {
+                    progressDialog.dismiss();
+                    Toast.makeText(RegisterActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
 
-                    }
                 });
 
 

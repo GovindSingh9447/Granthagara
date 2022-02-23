@@ -3,9 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn01.xml" value="0.13240740740740742" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn03.xml" value="0.13240740740740742" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn2.xml" value="0.13240740740740742" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_admin_menu.xml" value="0.23595505617977527" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_collage__university__added_.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_dashboard_admin.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_dashboard_user.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_menu_users.xml" value="0.23595505617977527" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_semester_add.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_subject_users.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_user_list.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/activity_user_upload.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/fragment_chat__admin_.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/row_course_users.xml" value="0.24114583333333334" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/row_notes.xml" value="0.23595505617977527" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/layout/row_user_msg.xml" value="0.22037037037037038" />
         <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/activity_collage__university__added_.xml" value="0.25" />
         <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/activity_collages__users.xml" value="0.16979166666666667" />
         <entry key="..\:/app project/Collage_Notes_1/app/src/main/res/layout/activity_courese__users_.xml" value="0.16979166666666667" />

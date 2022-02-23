@@ -96,22 +96,22 @@ public class AdapterNotes extends RecyclerView.Adapter<AdapterNotes.HolderNotesA
         holder.notesType.setText(senderName);
 
 
-        //load further data
-        loadNotesCollage(modelNotes,holder);
-        loadNotesFromUrl(modelNotes,holder);
-        loadNotesSize(modelNotes,holder);
+//        //load further data
+//        loadNotesCollage(modelNotes,holder);
+//        loadNotesFromUrl(modelNotes,holder);
+//        loadNotesSize(modelNotes,holder);
 
 
 
         //handel click with 2 options 1) EDIT 2) DELE TE
-        holder.moreBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                moreOptionDialogs(modelNotes, holder);
-
-
-            }
-        });
+//        holder.moreBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                moreOptionDialogs(modelNotes, holder);
+//
+//
+//            }
+//        });
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -127,31 +127,31 @@ public class AdapterNotes extends RecyclerView.Adapter<AdapterNotes.HolderNotesA
 
     }
 
-    private void moreOptionDialogs(ModelNotes modelNotes, HolderNotesAdmin holder) {
-
-        //option to show in dialog
-        String[] options ={"Edit", "Delete"};
-
-        //alert dialog
-        AlertDialog.Builder builder=new AlertDialog.Builder(context);
-        builder.setTitle("Choose Options")
-                .setItems(options, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                        //handel dialog option click
-
-                        if(i==0){
-                            //edit  Click
-                        }
-                        else if(i==1){
-                            //Delete Click
-                            DeleteNotes(modelNotes,holder);
-                        }
-                    }
-                })
-                .show();
-    }
+//    private void moreOptionDialogs(ModelNotes modelNotes, HolderNotesAdmin holder) {
+//
+//        //option to show in dialog
+//        String[] options ={"Edit", "Delete"};
+//
+//        //alert dialog
+//        AlertDialog.Builder builder=new AlertDialog.Builder(context);
+//        builder.setTitle("Choose Options")
+//                .setItems(options, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//
+//                        //handel dialog option click
+//
+//                        if(i==0){
+//                            //edit  Click
+//                        }
+//                        else if(i==1){
+//                            //Delete Click
+//                            DeleteNotes(modelNotes,holder);
+//                        }
+//                    }
+//                })
+//                .show();
+//    }
 
     private void DeleteNotes(ModelNotes modelNotes, HolderNotesAdmin holder) {
 
