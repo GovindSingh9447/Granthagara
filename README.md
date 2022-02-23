@@ -11,4 +11,5 @@ The User Interface of this application is very simple to use, even colour-blind 
 People can even contact the admin to contribute towards the material in this application and it keeps updating the resources regularly.
 
 
-<Preview> https://drive.google.com/file/d/1x9bMDiTuQnjHa2nfvHY7rNuPSKYxd9s1/view?usp=sharing
+
+  ![Click me for the demo video](https://drive.google.com/file/d/1x9bMDiTuQnjHa2nfvHY7rNuPSKYxd9s1/view?usp=sharing)
