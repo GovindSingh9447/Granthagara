@@ -17,6 +17,6 @@ People can even contact the admin to contribute towards the material in this app
 
 ![Click me for the demo video](https://github.com/GovindSingh9447/Images/blob/main/splash.jpeg)
 
-![Click me for the demo video](https://github.com/GovindSingh9447/Images/blob/main/splash.jpeg)
+![Click me for the demo video](https://github.com/GovindSingh9447/Images/blob/main/dashboard.jpeg)
 
 ![Click me for the demo video](https://github.com/GovindSingh9447/Images/blob/main/splash.jpeg)
