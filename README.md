@@ -51,4 +51,4 @@ People can even contact the admin to contribute towards the material in this app
 
 
 
-<h2>  50 + </h2>
+<h2>  AND MANY MORE............ </h2>
