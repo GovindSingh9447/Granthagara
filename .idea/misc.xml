@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_list.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_user_list.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn01.xml" value="0.13240740740740742" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn03.xml" value="0.13240740740740742" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn2.xml" value="0.13240740740740742" />
