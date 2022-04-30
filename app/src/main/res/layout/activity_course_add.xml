@@ -17,10 +17,13 @@ tools:context="com.ranawat.Adding_Section.CourseAddActivity">
         android:id="@+id/gobackbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_back_white"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@android:color/transparent"
-        android:layout_margin="10dp"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:src="@drawable/ic_back_white" />
 
     <ImageView
         android:id="@+id/iconTv"
@@ -87,17 +90,17 @@ tools:context="com.ranawat.Adding_Section.CourseAddActivity">
     android:textColorHint="@color/gray81"
     android:textSize="16dp"/>
 
-<Button
-    android:id="@+id/submit"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="30dp"
-    android:layout_marginEnd="30dp"
-    android:layout_marginTop="28dp"
-    android:background="@drawable/shape_btn01"
-    android:text="Submit"
-    android:layout_below="@+id/collagenames"
-    android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collagenames"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/shape_btn01"
+        android:text="Submit"
+        android:textColor="@color/white" />
 
 
 

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -28,12 +29,15 @@ public class MenuUsersActivity extends AppCompatActivity {
     //firebaseAuth
     private FirebaseAuth auth;
 
+    private String msg;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding=ActivityMenuUsersBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         //init firebase auth
         auth=FirebaseAuth.getInstance();
@@ -109,12 +113,12 @@ public class MenuUsersActivity extends AppCompatActivity {
 
     }
 
-    private String msg="";
     private void sendmsg() {
 
         //get msg
 
         msg=binding.msgBox.getText().toString().trim();
+
 
         //if msg is empty
         if (TextUtils.isEmpty(msg)){
@@ -122,7 +126,9 @@ public class MenuUsersActivity extends AppCompatActivity {
         }else
         {
             addmsgToFb();
+
         }
+
 
 
     }
@@ -156,6 +162,7 @@ public class MenuUsersActivity extends AppCompatActivity {
 
 
                     }
+
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -165,6 +172,8 @@ public class MenuUsersActivity extends AppCompatActivity {
                         Toast.makeText(MenuUsersActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
+
+        binding.msgBox.setText("");
 
     }
 }

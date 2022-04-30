@@ -8,7 +8,6 @@
     app:cardCornerRadius="5dp"
     app:cardElevation="0dp"
     app:contentPadding="5dp">
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -73,23 +72,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/TextAppearance.MaterialComponents.Body2"
-            android:text=""
+            android:text="23mb"
+            android:layout_marginLeft="8dp"
             android:fontFamily="@font/ubuntu_regular"
             android:layout_toEndOf="@id/pdf"
             android:layout_alignParentBottom="true"
             android:maxLines="1"/>
+
         <TextView
             android:id="@+id/notesDate"
+            style="@style/TextAppearance.MaterialComponents.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/TextAppearance.MaterialComponents.Body2"
-            android:text="dd/mm/yy"
-            android:fontFamily="@font/ubuntu_regular"
-            android:layout_toEndOf="@id/notesSize"
-            android:layout_toStartOf="@id/notesType"
             android:layout_alignParentBottom="true"
-            android:textAlignment="center"
-            android:maxLines="1"/>
+            android:layout_toStartOf="@id/notesType"
+            android:layout_toEndOf="@id/notesSize"
+            android:fontFamily="@font/ubuntu_regular"
+            android:maxLines="1"
+            android:text="dd/mm/yy"
+            android:textAlignment="center" />
 
         <ImageButton
             android:id="@+id/moreBtn"
