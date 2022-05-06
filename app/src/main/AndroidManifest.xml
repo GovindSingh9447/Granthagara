@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ranawat.collagenotes">
+    package="com.ranawat.collagenotes" >
     <!-- all required Permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,8 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-        android:usesCleartextTraffic="true">
-        <activity android:name="com.ranawat.Admin_Sections.AdminChatDetailsActivity"></activity>
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.ranawat.message.ChatActivity"
+            android:exported="false" />
+        <activity android:name="com.ranawat.Admin_Sections.AdminChatDetailsActivity" />
         <activity android:name="com.ranawat.Admin_Sections.Admin_Chat_Users_Activity" />
         <activity android:name="com.ranawat.Admin_Sections.UserListActivity" />
         <activity android:name="com.ranawat.Admin_Sections.AdminMenuActivity" />
@@ -42,8 +45,9 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashActivity"
-            android:exported="true">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ranawat.message.ChatActivity">
+
+    <!-- ToolBar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+        <ImageButton
+            android:id="@+id/gobackbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_white" />
+        
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/profile"
+            android:layout_toEndOf="@id/gobackbtn"
+            android:id="@+id/profilePic"/>
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:orientation="vertical"
+           android:layout_toEndOf="@id/profilePic">
+           <TextView
+               android:id="@+id/username"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="8dp"
+               android:text="User Name"
+               android:textColor="@color/white"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/email"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/username"
+               android:layout_centerHorizontal="true"
+               android:text="admin@gmail.com"
+               android:textColor="@color/white" />
+
+       </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@id/toolbarRl"
+        android:layout_above="@id/msgBox"
+        android:id="@+id/chatRecycleView"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#C8A4F5"
+        android:id="@+id/msgBox"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/typeMsg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Start typing...."
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sendMsg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/btn_send"
+            android:background="@color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

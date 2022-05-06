@@ -2,18 +2,21 @@ package com.ranawat.collagenotes.Model;
 
 public class ModelUserList {
 
-    String   email, name , lastmsg, userId;
+    String   email, name , lastmsg, userId ,  profilePic;
+    int unSeenMsg;
 
     public ModelUserList() {
     }
 
 
 
-    public ModelUserList(String email, String name , String lastmsg,String userId) {
+    public ModelUserList(String email, String name , String lastmsg, String userId, int unSeenMsg, String profilePic) {
         this.email = email;
         this.name = name;
         this.lastmsg = lastmsg;
         this.userId = userId;
+        this.profilePic=profilePic;
+        this.unSeenMsg=unSeenMsg;
     }
 
     public String getUserId(String key) {
@@ -24,7 +27,25 @@ public class ModelUserList {
         return userId;
     }
 
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
+    public int getUnSeenMsg() {
+        return unSeenMsg;
+    }
+
+    public void setUnSeenMsg(int unSeenMsg) {
+        this.unSeenMsg = unSeenMsg;
+    }
+
+    public String getProfilePic() {
+        return profilePic;
+    }
+
+    public void setProfilePic(String profilePic) {
+        this.profilePic = profilePic;
+    }
 
     public String getLastmsg() {
         return lastmsg;

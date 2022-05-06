@@ -10,13 +10,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.ranawat.collagenotes.Adapter.AdapterUserListMsg;
 import com.ranawat.collagenotes.Model.ModelUserList;
-import com.ranawat.collagenotes.R;
+
 import com.ranawat.collagenotes.databinding.FragmentChatAdminBinding;
 
 import java.util.ArrayList;
@@ -31,7 +33,9 @@ public class Chat_Admin_Fragment extends Fragment {
     FragmentChatAdminBinding binding;
     ArrayList<ModelUserList> arrayList = new ArrayList<>();
     FirebaseDatabase database;
-
+    //firebase Auth
+    private FirebaseAuth firebaseAuth;
+    DatabaseReference databaseReference;
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,10 +44,13 @@ public class Chat_Admin_Fragment extends Fragment {
         binding=FragmentChatAdminBinding.inflate(inflater, container,false);
 
         AdapterUserListMsg adapterUserListMsg= new AdapterUserListMsg(arrayList ,getContext());
-        binding.chatrecyView.setAdapter(adapterUserListMsg);
+        binding.userChats.setAdapter(adapterUserListMsg);
         database=FirebaseDatabase.getInstance();
         LinearLayoutManager linearLayoutManager= new LinearLayoutManager(getContext());
-        binding.chatrecyView.setLayoutManager(linearLayoutManager);
+        binding.userChats.setLayoutManager(linearLayoutManager);
+
+        firebaseAuth=FirebaseAuth.getInstance();
+
 
         database.getReference().child("Users").addValueEventListener(new ValueEventListener() {
             @Override
@@ -52,7 +59,12 @@ public class Chat_Admin_Fragment extends Fragment {
                 for (DataSnapshot snapshot1 :snapshot.getChildren()){
                     ModelUserList userList =snapshot1.getValue(ModelUserList.class);
                     userList.getUserId(snapshot1.getKey());
+                   /* if(!userList.getUserId().equals(FirebaseAuth.getInstance().getUid())){
+
+                    }*/
+
                     arrayList.add(userList);
+
                 }
                 adapterUserListMsg.notifyDataSetChanged();
             }

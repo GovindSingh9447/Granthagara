@@ -4,19 +4,32 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable-v24/shape_toolbar02.xml" value="0.242" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/bg_reciver.xml" value="0.164" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/bg_sender.xml" value="0.164" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/shape_btn01.xml" value="0.2215" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_admin_menu.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_chat.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_course_add.xml" value="0.1648148148148148" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_dashboard_user.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_menu_users.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes_users.xml" value="0.1648148148148148" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes_viewer_admin.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_semester_users.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_splash.xml" value="0.23391215526046988" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_list.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_upload.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_zxy.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/bg_reciver_msg.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/fragment_chat__admin_.xml" value="0.23391215526046988" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/fragment_user_.xml" value="0.23391215526046988" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_course.xml" value="0.23391215526046988" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_notes.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_semester.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_user_list.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_user_msg.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/sample_reciver.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/sample_sender.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn01.xml" value="0.13240740740740742" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn03.xml" value="0.13240740740740742" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn2.xml" value="0.13240740740740742" />

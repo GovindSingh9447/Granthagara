@@ -26,11 +26,8 @@ public class Collage_University_Added_Activity extends AppCompatActivity {
 
     //firebaseAuth
     private FirebaseAuth auth;
-
-
     //Progreesbar
     private ProgressDialog progressDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
