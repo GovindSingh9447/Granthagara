@@ -24,10 +24,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.ranawat.Admin_Sections.UserUploadAdminActivity;
+import com.ranawat.Notifications.FcmNotificationsSender;
+
+import com.ranawat.collagenotes.DashboardUserActivity;
+import com.ranawat.collagenotes.MainActivity;
 import com.ranawat.collagenotes.databinding.ActivityNotesAddBinding;
 
 import java.util.ArrayList;
@@ -49,6 +54,8 @@ public class NotesAddActivity extends AppCompatActivity {
 
 
 
+
+
     //Tag for debugging
     private static final String TAG="ADD_NOTES_FILE";
 
@@ -62,6 +69,9 @@ public class NotesAddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityNotesAddBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // for sending notification to all
+        FirebaseMessaging.getInstance().subscribeToTopic("all");
 
 
         //handel click go back
@@ -462,19 +472,7 @@ public class NotesAddActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
     }
-
-
-
-
-
-
-
-
 
 
     private String title="", descriptions="", collage="", course="", semester="", subject="",senderName="";
@@ -589,6 +587,7 @@ public class NotesAddActivity extends AppCompatActivity {
         hashMap.put("url", ""+uploadeNotesUrl);
 
 
+
         //upload to fb db
         DatabaseReference reference= FirebaseDatabase.getInstance().getReference("Notes");
         reference.child(""+timestamp)
@@ -600,6 +599,7 @@ public class NotesAddActivity extends AppCompatActivity {
                         progressDialog.dismiss();
                         Toast.makeText(NotesAddActivity.this, "Notes is Uploaded Successfully....", Toast.LENGTH_SHORT).show();
 
+                       sendNotification();
 
                     }
                 })
@@ -614,6 +614,20 @@ public class NotesAddActivity extends AppCompatActivity {
 
 
 
+
+
+
+
+    }
+    String titles="New Notes Uploaded";
+    String body="Notes of "+ collage+" - "+course+" - "+semester+" - "+subject+" - "+title;
+
+    private void sendNotification() {
+        /*FcmNotificationsSender notificationsSender=new FcmNotificationsSender("topics/all",
+                titles,
+                body,
+                getApplicationContext(), MainActivity.this);
+        notificationsSender.SendNotifications();*/
     }
 
 

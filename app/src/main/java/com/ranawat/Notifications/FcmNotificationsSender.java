@@ -10,6 +10,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.ranawat.collagenotes.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -30,12 +32,12 @@ public class FcmNotificationsSender  {
     private final String postUrl = "https://fcm.googleapis.com/fcm/send";
     private final String fcmServerKey ="AAAAC0aRo80:APA91bFElxpNE37RgsmffqgCkUNN_fb35xUU6mXc7qeONRI2h1l9UqRpKgG5EeO1CPMkF5BRiBk50YJfxNwfYj7_AzGwkqmbiYGTJ47G_Ipig0bNw9CN9j_IIOnJmCj8s2vi2ooaUayK";
 
-    public FcmNotificationsSender(String userFcmToken, String title, String body, Context mContext, Activity mActivity) {
+    public FcmNotificationsSender(String userFcmToken, String title, String body, Context mContext, OnSuccessListener<Void> mActivity) {
         this.userFcmToken = userFcmToken;
         this.title = title;
         this.body = body;
         this.mContext = mContext;
-        this.mActivity = mActivity;
+        this.mActivity = (Activity) mActivity;
 
 
     }
@@ -49,7 +51,7 @@ public class FcmNotificationsSender  {
             JSONObject notiObject = new JSONObject();
             notiObject.put("title", title);
             notiObject.put("body", body);
-            notiObject.put("icon", "logo5"); // enter icon that exists in drawable only
+            notiObject.put("icon", R.drawable.logo5); // enter icon that exists in drawable only
 
 
 
