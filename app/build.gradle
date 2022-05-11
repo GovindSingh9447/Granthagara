@@ -1,5 +1,5 @@
 plugins {
-n n     id 'com.android.application'
+    id 'com.android.application'
     id 'com.google.gms.google-services'
 }
 
