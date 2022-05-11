@@ -4,6 +4,8 @@
     <!-- all required Permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
