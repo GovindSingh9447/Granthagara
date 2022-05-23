@@ -35,10 +35,6 @@ public class DashboardUserActivity extends AppCompatActivity {
     private ArrayList<ModelCollage> collageArrayList;
 
 
-
-
-
-
     //adapter
     private com.ranawat.collagenotes.Adapter_Users.AdapterCollage adapterCollage;
 
