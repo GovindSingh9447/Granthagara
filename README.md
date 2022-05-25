@@ -1,5 +1,5 @@
 
-https://career44.b=8sVs4B4Us8IGmWkZL7gbUduUDEXHKdRvnqPCRz2EFKs%253d
+https://career44.b=8sVs4B4Us8IGmWkZL7gbUduUD
 <h1>“College Notes”</h1>
 
 
