@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/ubuntu_regular"
-        android:text="Welcome to College Notes"
+        android:text="Welcome to OneNotes"
         android:textColor="@color/black"
         android:textSize="24sp"/>
 
