@@ -1,5 +1,5 @@
 
-https://meet.google.com/ptc-fumb-ozz
+
 <h1>“College Notes”</h1>
 
 
