@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/most_Viewed"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/slider_img_1" />
+
+        <TextView
+            android:id="@+id/collageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/most_Viewed"
+            android:fontFamily="@font/baloo"
+            android:text="NCRT"
+            android:textSize="20dp" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@id/collageName"
+            android:layout_toRightOf="@id/most_Viewed"
+            android:layout_marginLeft="10dp"
+            android:rating="2.5"/>
+
+        <TextView
+            android:id="@+id/mv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dclkjcslvnvh dvohfe ifh csfh csihc csihf efcsic fchg"
+            android:layout_below="@id/rating"
+            android:layout_toRightOf="@id/most_Viewed"
+            android:padding="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

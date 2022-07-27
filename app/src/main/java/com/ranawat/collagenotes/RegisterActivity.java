@@ -7,8 +7,11 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Pair;
 import android.util.Patterns;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -17,8 +20,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.ranawat.collagenotes.databinding.ActivityMainBinding;
+import com.ranawat.collagenotes.databinding.ActivityOnBoardingBinding;
 import com.ranawat.collagenotes.databinding.ActivityRegisterBinding;
+
 
 import java.util.HashMap;
 import java.util.regex.Pattern;
@@ -35,12 +39,16 @@ public class RegisterActivity extends AppCompatActivity {
     //progress dialog
     private ProgressDialog progressDialog;
 
+    private ScrollView scrollView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //init firebase auth
         firebaseAuth=FirebaseAuth.getInstance();
@@ -55,8 +63,10 @@ public class RegisterActivity extends AppCompatActivity {
 
         binding.backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                onBackPressed();
+            public void onClick(View view) {
+                Intent intent=new Intent(RegisterActivity.this,GetStartedActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -67,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-
+        scrollView=binding.scrollView;
 
         //handel click , begin register
 
@@ -81,7 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    private  String name= "", email="", password="";
+    private  String name= "", email="",number="", password="" , countrycode="+91";
     private void validateData() {
         /* Before Creating account , lets do some data vaildation */
 
@@ -89,8 +99,11 @@ public class RegisterActivity extends AppCompatActivity {
         //get data
         name =binding.nameEt.getText().toString().trim();
         email =binding.emailEt.getText().toString().trim();
+        number=binding.phoneEt.getText().toString().trim();
         password =binding.passwordEt.getText().toString().trim();
         String cPassword = binding.cpasswordEt.getText().toString().trim();
+
+        String phoneno=countrycode+number;
 
 
         //vaildate data
@@ -99,6 +112,9 @@ public class RegisterActivity extends AppCompatActivity {
         }
         else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             Toast.makeText(RegisterActivity.this, "Invalid email Pattern.....", Toast.LENGTH_SHORT).show();
+        }
+        else if (TextUtils.isEmpty(number)){
+            Toast.makeText(RegisterActivity.this, "Enter Phone Number.....", Toast.LENGTH_SHORT).show();
         }
         else if(TextUtils.isEmpty(password)){
             Toast.makeText(RegisterActivity.this, "Enter Password....!", Toast.LENGTH_SHORT).show();
@@ -111,12 +127,24 @@ public class RegisterActivity extends AppCompatActivity {
         }
         else
         {
-            createuserAccount();
+
+            Intent intent=new Intent (getApplicationContext(),VerifyOTP.class);
+            intent.putExtra("name",name);
+            intent.putExtra("email",email);
+            intent.putExtra("phoneNo",phoneno);
+            intent.putExtra("password",password);
+            startActivity(intent);
+
+            Pair[] pairs=new Pair[1];
+            pairs[0] =new Pair<View , String >(scrollView,"teansition_Otp_screen");
+
+
+           // createuserAccount();
         }
 
     }
 
-    private void createuserAccount() {
+   /* private void createuserAccount() {
         progressDialog.setMessage("Creating Account....");
         progressDialog.dismiss();
 
@@ -184,6 +212,6 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
-
+*/
 
 }

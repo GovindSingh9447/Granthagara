@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/slider_img_1"
+    android:paddingLeft="15dp">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/menu_title"
+        android:src="@drawable/slider_img_1" />
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/menu_App_dec"
+        android:text="College Notes"
+        android:elevation="2dp"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/menu_App_dec"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:background="#00000000"
+        android:elevation="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="Lets study And Change The World" />
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="175dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:src="@drawable/slider_img2" />
+</RelativeLayout>

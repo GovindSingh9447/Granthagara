@@ -65,7 +65,6 @@ public class AdapterCollage extends RecyclerView.Adapter<AdapterCollage.HolderCo
         long timestamp=model.getTimestamp();
 
 
-
         //set data
         holder.collagename.setText(collage);
 
@@ -87,7 +86,7 @@ public class AdapterCollage extends RecyclerView.Adapter<AdapterCollage.HolderCo
                                 Toast.makeText(context, "Deleting....", Toast.LENGTH_SHORT).show();
                                 deletecollage(model, holder);
 
-                            }
+                            } 
                         })
                         .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                             @Override
@@ -141,8 +140,6 @@ public class AdapterCollage extends RecyclerView.Adapter<AdapterCollage.HolderCo
                     }
                 });
     }
-
-
 
 
 

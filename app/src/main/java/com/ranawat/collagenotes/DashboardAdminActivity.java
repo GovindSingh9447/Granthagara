@@ -161,7 +161,7 @@ public class DashboardAdminActivity extends AppCompatActivity {
         FirebaseUser firebaseUser=firebaseAuth.getCurrentUser();
         if (firebaseUser==null){
             //not login , goto main screen
-            startActivity(new Intent(DashboardAdminActivity.this,MainActivity.class));
+            startActivity(new Intent(DashboardAdminActivity.this, OnBoardingActivity.class));
             finish();
         }
         else
