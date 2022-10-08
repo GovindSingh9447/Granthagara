@@ -150,8 +150,6 @@ public class CourseAddActivity extends AppCompatActivity {
                     String collageId=""+ds.child("cid").getValue();
                     String collageTitle=""+ds.child("collage").getValue();
 
-
-
                     //add to arraylist
                     collageIdArrayList.add(collageId);
                     collageTitleArrayList.add(collageTitle);

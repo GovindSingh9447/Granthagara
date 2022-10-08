@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Col Notes</string>
-    <string name="collage_notes">Col Notes</string>
+    <string name="app_name">Granthagra</string>
+    <string name="collage_notes">Granthagra</string>
     <string name="new_user_signup">New User? <b>SignUp</b></string>
     <string name="new_user_signIn">Already have an account! <b>SignIn</b></string>
     <string name="login">Login</string>

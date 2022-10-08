@@ -1,26 +1,38 @@
 package com.ranawat.Animes.AnimesModel;
 
+import java.util.List;
+
 public class AnimesModel {
-    String title, author,img,chapter,status,artist;
+    String animeName,artist,author,status,img,total_chapters;
+    String anime;
 
     public AnimesModel() {
     }
 
-    public AnimesModel(String title, String author, String img, String chapter, String status, String artist) {
-        this.title = title;
-        this.author = author;
-        this.img = img;
-        this.chapter = chapter;
-        this.status = status;
+    public AnimesModel(String animeName, String artist, String author, String status, String img, String total_chapters, String anime) {
+        this.animeName = animeName;
         this.artist = artist;
+        this.author = author;
+        this.status = status;
+        this.img = img;
+        this.total_chapters = total_chapters;
+        this.anime = anime;
     }
 
-    public String getTitle() {
-        return title;
+    public String getAnimeName() {
+        return animeName;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setAnimeName(String animeName) {
+        this.animeName = animeName;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public void setArtist(String artist) {
+        this.artist = artist;
     }
 
     public String getAuthor() {
@@ -31,22 +43,6 @@ public class AnimesModel {
         this.author = author;
     }
 
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
-    }
-
-    public String getChapter() {
-        return chapter;
-    }
-
-    public void setChapter(String chapter) {
-        this.chapter = chapter;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -55,11 +51,27 @@ public class AnimesModel {
         this.status = status;
     }
 
-    public String getArtist() {
-        return artist;
+    public String getImg() {
+        return img;
     }
 
-    public void setArtist(String artist) {
-        this.artist = artist;
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getTotal_chapters() {
+        return total_chapters;
+    }
+
+    public void setTotal_chapters(String total_chapters) {
+        this.total_chapters = total_chapters;
+    }
+
+    public String getAnime() {
+        return anime;
+    }
+
+    public void setAnime(String anime) {
+        this.anime = anime;
     }
 }

@@ -16,6 +16,42 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name="com.ranawat.School.UploadSchoolDataActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.School.NotesViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.School.NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.School.SubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.School.ClassActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.Interview.UploadInterviewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.Interview.InterviewCollectionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.Interview.InterviewNotesViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.Hindi_Upnayas.HindiUpnayasActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.Interview.InterviewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.Animes.AddChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ranawat.Animes.AnimeViewActivity"
+            android:exported="false" />
+        <activity
             android:name="com.ranawat.Animes.ChaptersActivity"
             android:exported="false" />
         <activity
@@ -24,9 +60,7 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
-        <activity
-            android:name=".UserDashboard"
-            android:exported="true" />
+        <activity android:name=".UserDashboard" />
         <activity
             android:name=".VerifyOTP"
             android:exported="true" />

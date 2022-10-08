@@ -39,11 +39,11 @@
 
 
     <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfviewers"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="3dp"
         android:layout_below="@id/toolbar"
-        android:id="@+id/pdfviewers"/>
+        android:layout_marginTop="3dp" />
 
     <TextView
         android:layout_width="wrap_content"

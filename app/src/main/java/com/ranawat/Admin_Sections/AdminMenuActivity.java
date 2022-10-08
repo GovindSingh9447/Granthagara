@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ranawat.Animes.AddChapterActivity;
 import com.ranawat.collagenotes.DashboardUserActivity;
 import com.ranawat.collagenotes.UserDashboard;
 import com.ranawat.collagenotes.databinding.ActivityAdminMenuBinding;
@@ -54,13 +55,15 @@ public class AdminMenuActivity extends AppCompatActivity {
             }
         });
 
-        binding.userList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // Intent intent=new Intent(AdminMenuActivity.this, UserListActivity.class);
-                Intent intent=new Intent(AdminMenuActivity.this, UserDashboard.class);
-                startActivity(intent);
-            }
+        binding.userList.setOnClickListener(v -> {
+           // Intent intent=new Intent(AdminMenuActivity.this, UserListActivity.class);
+            Intent intent=new Intent(AdminMenuActivity.this, UserDashboard.class);
+            startActivity(intent);
+        });
+
+        binding.anime.setOnClickListener(v ->{
+           Intent intent =new Intent(AdminMenuActivity.this, AddChapterActivity.class);
+           startActivity(intent);
         });
 
         binding.adshare.setOnClickListener(new View.OnClickListener() {

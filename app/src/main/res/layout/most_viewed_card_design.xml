@@ -4,12 +4,15 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp"
     app:cardElevation="8dp">
 
     <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:padding="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/most_Viewed"
@@ -23,10 +26,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
             android:layout_toRightOf="@id/most_Viewed"
             android:fontFamily="@font/baloo"
             android:text="NCRT"
-            android:textSize="20dp" />
+            android:textSize="16dp" />
 
         <RatingBar
             android:id="@+id/rating"

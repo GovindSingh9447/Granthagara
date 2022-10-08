@@ -106,15 +106,40 @@
         android:id="@+id/userList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/shape_btn01"
-        android:text="user Lists"
-        android:fontFamily="@font/ubuntu_regular"
-
         android:layout_below="@id/adshare"
-        android:textColor="@color/white"/>
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/shape_btn01"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="user Lists"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/anime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userList"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/shape_btn01"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="chapter"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anime"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/shape_btn01"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="img"
+        android:textColor="@color/white" />
 
 
 

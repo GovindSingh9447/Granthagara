@@ -92,9 +92,9 @@ public class SplashActivity extends AppCompatActivity {
         {
             String users =auth.getUid();
             //user loggin check user type same as done in login screen
-            startActivity(new Intent(SplashActivity.this,DashboardAdminActivity.class));
+            startActivity(new Intent(SplashActivity.this,UserDashboard.class));
             finish();
-            Toast.makeText(this, "opening....", Toast.LENGTH_SHORT).show();
+
 
 
             //check in db

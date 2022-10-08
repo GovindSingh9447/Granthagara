@@ -1,6 +1,7 @@
 package com.ranawat.Animes.AnimesAdapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,8 +15,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.common.internal.ConnectionTelemetryConfiguration;
 import com.ranawat.Animes.AnimesModel.AnimesModel;
+import com.ranawat.Animes.ChaptersActivity;
+import com.ranawat.Users_Sections.SemesterUsersActivity;
 import com.ranawat.collagenotes.Model.ModelCollage;
-import com.ranawat.collagenotes.databinding.ModelBooksBinding;
+import com.ranawat.collagenotes.databinding.ModelAnimeBinding;
+
 
 import java.security.PrivateKey;
 import java.util.ArrayList;
@@ -30,25 +34,26 @@ public class AnimesAdapter extends RecyclerView.Adapter<AnimesAdapter.HolderAnim
         this.modelArrayList = modelArrayList;
     }
 
-    private ModelBooksBinding binding;
+    private ModelAnimeBinding binding;
 
     @NonNull
     @Override
     public HolderAnimes onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding=ModelBooksBinding.inflate(LayoutInflater.from(context),parent,false);
+        binding = ModelAnimeBinding.inflate(LayoutInflater.from(context), parent, false);
         return new HolderAnimes(binding.getRoot());
     }
 
     @Override
     public void onBindViewHolder(@NonNull HolderAnimes holder, int position) {
 
-        AnimesModel animesModel=modelArrayList.get(position);
-        String title=animesModel.getTitle();
-        String author=animesModel.getAuthor();
-        String artist=animesModel.getArtist();
-        String status=animesModel.getStatus();
-
-        String chapter=animesModel.getChapter();
+        AnimesModel animesModel = modelArrayList.get(position);
+        String title = animesModel.getAnimeName();
+        String author = animesModel.getAuthor();
+        String artist = animesModel.getArtist();
+        String status = animesModel.getStatus();
+        String animeId=animesModel.getAnime();
+        String img=animesModel.getImg();
+        String chapter = animesModel.getTotal_chapters();
 
         //set Data
         holder.title.setText(title);
@@ -58,6 +63,17 @@ public class AnimesAdapter extends RecyclerView.Adapter<AnimesAdapter.HolderAnim
         holder.artist_name.setText(artist);
         Glide.with(context).load(animesModel.getImg()).into(holder.img);
 
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ChaptersActivity.class);
+                intent.putExtra("book", title);
+                intent.putExtra("animeId",animeId);
+                intent.putExtra("img",img);
+                context.startActivity(intent);
+            }
+        });
 
 
     }
@@ -70,19 +86,20 @@ public class AnimesAdapter extends RecyclerView.Adapter<AnimesAdapter.HolderAnim
 
     //view Holder class for Binding the Model Book
 
-    class HolderAnimes extends RecyclerView.ViewHolder{
+    class HolderAnimes extends RecyclerView.ViewHolder {
 
         ImageView img;
-        TextView title,author_name,artist_name,status_name,chapter_name;
+        TextView title, author_name, artist_name, status_name, chapter_name;
 
         public HolderAnimes(@NonNull View itemView) {
             super(itemView);
-            title=binding.title;
-            author_name=binding.authorName;
-            artist_name=binding.artistName;
-            status_name=binding.status;
-            chapter_name=binding.chapterName;
-            img=binding.img;
+            title = binding.title;
+            title.setSelected(true);
+            author_name = binding.authorName;
+            artist_name = binding.artistName;
+            status_name = binding.status;
+            chapter_name = binding.chapterName;
+            img = binding.img;
 
 
         }
@@ -99,7 +116,7 @@ public class AnimesAdapter extends RecyclerView.Adapter<AnimesAdapter.HolderAnim
         holder.chapter_name.setText(chapter);
         Glide.with(context).load(animesModel.getImgurl()).into(holder.img);*/
 
-/*img=binding.img;
+            /*img=binding.img;
             title=binding.title;
             artist_name=binding.artistName;
             author_name=binding.authorName;

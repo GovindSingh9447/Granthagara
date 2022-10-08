@@ -7,6 +7,8 @@ public class ModelCollage {
     String cid,collage ,uid;
     long timestamp;
 
+    String img;
+
     //constructor empty is for firebase
     public ModelCollage() {
 
@@ -15,15 +17,25 @@ public class ModelCollage {
     //parametrize constructor
 
 
-    public ModelCollage(String cid, String collage, String uid, long timestamp) {
+    public ModelCollage(String cid, String collage , String img, String uid, long timestamp) {
         this.cid = cid;
         this.collage = collage;
         this.uid = uid;
+        this.img = img;
         this.timestamp = timestamp;
     }
 
 
     /*-------------------getter and setter---------------------*/
+
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
 
     public String getCid() {
         return cid;

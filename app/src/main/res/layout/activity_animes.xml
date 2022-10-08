@@ -4,29 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:backgroundTint="#30FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:background="@drawable/backgroundimg"
     tools:context="com.ranawat.Animes.AnimesActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/navBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="20dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="20dp">
+        android:layout_height="60dp"
+
+        android:paddingStart="10dp">
 
 
-    <ImageView
-        android:id="@+id/backBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:src="@drawable/arrow_back_white"
-        />
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_arrow" />
 
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/baloo"
+            android:textColor="@color/white"
+            android:text="Top Anime"
+            android:textSize="26sp" />
+    </RelativeLayout>
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,9 +45,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -67,12 +76,13 @@
                 android:id="@+id/recycleAnime"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/black"
-                tools:listitem="@layout/model_books" />
+                android:paddingBottom="5dp"
+                tools:listitem="@layout/model_anime" />
 
 
         </LinearLayout>
 
 
     </androidx.core.widget.NestedScrollView>
+
 </RelativeLayout>
