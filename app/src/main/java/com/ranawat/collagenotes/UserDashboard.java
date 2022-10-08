@@ -201,7 +201,6 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
        });
 
 
-
         //Hind_Upanyas
         binding.hindiUpnViewAll.setOnClickListener(view -> {
             Intent intent =new Intent(UserDashboard.this, HindiUpnayasActivity.class);
@@ -212,13 +211,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         loadHindUpn();
 
 
-
-
-
-
     }
-
-
 
 
     private void navigationDrawer() {
@@ -337,7 +330,6 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
     }
 
-
     //SCHOOL
     private void loadClass() {
         classModelArrayList = new ArrayList<>();
@@ -373,8 +365,6 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         });
     }
 
-
-
     //Anime Section Or Manga
     private void loadAnimes() {
         //init arrayList
@@ -409,9 +399,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         });
     }
 
-
     //Interview Section
-
     private void loadInterView() {
         interviewModelArrayList=new ArrayList<>();
 
@@ -523,11 +511,5 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         });
 
     }
-
-
-
-
-
-
 
 }
