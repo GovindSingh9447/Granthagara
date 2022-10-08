@@ -3,47 +3,68 @@
 
     <group android:checkableBehavior="single">
 
-        <item android:id="@+id/homeMenu"
-            android:icon="@drawable/ic_back"
-            android:title="Home"
-            />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
 
-        <item android:id="@+id/chatMenu"
-            android:icon="@drawable/ic_back"
-            android:title="chat"
-            />
 
-        <item android:id="@+id/uploadMenu"
-            android:icon="@drawable/ic_back"
-            android:title="Upload"
-            />
+        <!--<item
+            android:id="@+id/homeMenu"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />-->
+
+        <item
+            android:id="@+id/chatMenu"
+            android:icon="@drawable/ic_chat"
+            android:title="chat" />
+
+        <item
+            android:id="@+id/uploadMenu"
+            android:icon="@drawable/ic_upload"
+            android:title="Upload" />
 
         <item android:title="Sharing">
 
             <menu>
 
-                <item android:id="@+id/shareMenu"
-                    android:icon="@drawable/ic_back"
-                    android:title="Share"/>
+                <item
+                    android:id="@+id/shareMenu"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share" />
 
-                <item android:id="@+id/refereMenu"
-                    android:icon="@drawable/ic_back"
-                    android:title="Refer"/>
-
+                <item
+                    android:id="@+id/refereMenu"
+                    android:icon="@drawable/ic_share_refer"
+                    android:title="Refer" />
 
 
             </menu>
         </item>
 
-        <item android:id="@+id/policyMenu"
-            android:icon="@drawable/ic_back"
-            android:title="policy"
-            />
-
-
-
-
 
     </group>
 
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/policyMenu"
+                    android:icon="@drawable/ic_policy"
+                    android:title="policy" />
+
+
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_logout_white"
+                    android:title="Logout" />
+
+
+            </group>
+        </menu>
+
+    </item>
 </menu>

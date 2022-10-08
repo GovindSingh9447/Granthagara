@@ -29,10 +29,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.ranawat.Admin_Sections.UserUploadAdminActivity;
-import com.ranawat.Notifications.FcmNotificationsSender;
 
-import com.ranawat.collagenotes.DashboardUserActivity;
-import com.ranawat.collagenotes.MainActivity;
 import com.ranawat.collagenotes.databinding.ActivityNotesAddBinding;
 
 import java.util.ArrayList;
@@ -626,7 +623,7 @@ public class NotesAddActivity extends AppCompatActivity {
         /*FcmNotificationsSender notificationsSender=new FcmNotificationsSender("topics/all",
                 titles,
                 body,
-                getApplicationContext(), MainActivity.this);
+                getApplicationContext(), OnBoardingActivity.this);
         notificationsSender.SendNotifications();*/
     }
 

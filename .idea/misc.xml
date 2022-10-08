@@ -6,27 +6,84 @@
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable-v24/shape_toolbar02.xml" value="0.242" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/bg_reciver.xml" value="0.164" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/bg_sender.xml" value="0.164" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/card1.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/card2.xml" value="0.106" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/card3.xml" value="0.106" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/card4.xml" value="0.106" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/forget_password.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/ic_menu_black.xml" value="0.106" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/ic_profile.xml" value="0.106" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/ic_switch.xml" value="0.2265" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/next.xml" value="0.1315" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/profile_bg.xml" value="0.23" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/profile_iteam_bg.xml" value="0.1685" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/shape_btn01.xml" value="0.2215" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/white_circle.xml" value="0.195" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/drawable/white_ciurcle.xml" value="0.1565" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_add_chapter.xml" value="0.23802083333333332" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_admin_menu.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_anime_view.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_animes.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_chapters.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_chat.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_class.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_course_add.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_course_admin.xml" value="0.234375" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_dashboard_admin.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_dashboard_user.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_forget_password.xml" value="0.234375" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_forget_password_success_message.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_get_started.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_hindi_upnayas.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_interview.xml" value="0.234375" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_interview_collection.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_interview_notes_viewer.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_login.xml" value="0.18796296296296297" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_main.xml" value="0.18796296296296297" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_make_selection.xml" value="0.234375" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_menu_users.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes_admin.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes_users.xml" value="0.1648148148148148" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes_view.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes_view_user.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_notes_viewer_admin.xml" value="0.1" />
-        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_on_boarding.xml" value="0.15462962962962962" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_semester_add.xml" value="0.23802083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_semester_admin.xml" value="0.12129629629629629" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_semester_users.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_set_new_password.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_splash.xml" value="0.23391215526046988" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_subject.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_subject_admin.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_upload_interview.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_upload_school_data.xml" value="0.1746987951807229" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_dashboard.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_list.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_sent_messages.xml" value="0.22962962962962963" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_upload.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_user_upload_admin.xml" value="0.75" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_verify_otp.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/activity_zxy.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/bg_reciver_msg.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/featured_card_design.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/fragment_chat__admin_.xml" value="0.23391215526046988" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/fragment_user_.xml" value="0.23391215526046988" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/menu_header.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_anime_img_preview.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_books.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_chapter.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_class.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_hindiupn.xml" value="0.67" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_inter_coll.xml" value="0.23854166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_interview.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_notes.xml" value="0.44711538461538464" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/model_subject.xml" value="0.9" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/most_viewed_card_design.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_collage.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_course.xml" value="0.23391215526046988" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_notes.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_semester.xml" value="0.23854166666666668" />
@@ -35,6 +92,9 @@
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/row_user_notes_upload.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/sample_reciver.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/sample_sender.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/slides_layout.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/layout/users_to_admin_chats.xml" value="0.22962962962962963" />
+        <entry key="..\:/AndroidStudioProjects/Collage_Notes_1-/app/src/main/res/menu/sidemenu.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn01.xml" value="0.13240740740740742" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn03.xml" value="0.13240740740740742" />
         <entry key="..\:/AndroidStudioProjects/Collage_Notes_1/app/src/main/res/drawable/shape_btn2.xml" value="0.13240740740740742" />

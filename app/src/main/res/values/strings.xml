@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">OneNotes</string>
-    <string name="collage_notes">OneNotes</string>
+    <string name="app_name">Granthagra</string>
+    <string name="collage_notes">Granthagra</string>
     <string name="new_user_signup">New User? <b>SignUp</b></string>
     <string name="new_user_signIn">Already have an account! <b>SignIn</b></string>
     <string name="login">Login</string>
@@ -16,6 +16,21 @@
     <string name="this_app_is_made_by_govind_singh_ranawat_powered_by_ranawattech_ranawattech_is_product_base_startup_companies">College Notes application is developed by RanaWatTech🍁 </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="let_get_started">Let Get Started →</string>
+
+
+    <string name="slider_heading1">स्वाध्याय सर्वत्र जयते</string>
+    <string name="slider_desc1">Self-study wins everywhere</string>
+
+    <string name="slider_heading2">ज्ञानं परम् औषधि</string>
+    <string name="slider_desc2">Knowledge is super-medicine</string>
+
+    <string name="slider_heading3">शिक्षा शक्ति रूपं</string>
+    <string name="slider_desc3">Wisdom is the face of power</string>
+
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="sign_in">Sign In</string>
 
 
 </resources>

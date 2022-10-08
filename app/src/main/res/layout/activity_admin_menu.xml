@@ -8,7 +8,6 @@
     tools:context="com.ranawat.Admin_Sections.AdminMenuActivity">
 
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -18,10 +17,10 @@
             android:id="@+id/gobackbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back_white"
-            android:background="@android:color/transparent"
             android:layout_margin="10dp"
-            android:padding="5dp"/>
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_white" />
 
         <ImageButton
             android:id="@+id/btnSwitch"
@@ -33,7 +32,7 @@
             android:layout_marginEnd="15dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_switch"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
 
         <ImageView
@@ -42,7 +41,7 @@
             android:layout_height="110dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="48dp"
-            android:src="@drawable/logo5"/>
+            android:src="@drawable/logo5" />
 
         <TextView
             android:id="@+id/nn"
@@ -54,7 +53,7 @@
             android:fontFamily="@font/ubuntu_regular"
             android:text="Check Users Upload"
             android:textColor="@color/white"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
     </RelativeLayout>
 
@@ -107,15 +106,40 @@
         android:id="@+id/userList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/shape_btn01"
-        android:text="user Lists"
-        android:fontFamily="@font/ubuntu_regular"
-
         android:layout_below="@id/adshare"
-        android:textColor="@color/white"/>
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/shape_btn01"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="user Lists"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/anime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userList"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/shape_btn01"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="chapter"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anime"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/shape_btn01"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="img"
+        android:textColor="@color/white" />
 
 
 

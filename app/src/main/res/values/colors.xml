@@ -2,15 +2,36 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>
 <!--    <color name="purple_500">#FF6200EE</color>-->
-    <color name="purple_700">#FF3700B3</color>
+
     <color name="purple_500">#1B0C32</color>
 <!--    <color name="purple_700">#002622</color>-->
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#111111</color>
+    <color name="teal_700">#131414</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#cccccc</color>
     <color name="gray81">#c5c5c5</color>
     <color name="gray82">#777777</color>
     <color name="gray83">#ededed</color>
+    <color name="colorPrimaryDark">#141E5A</color>
+    <color name="purple_700">#FF3700B3</color>
+
+
+
+             <!--        Dashboard Colors     -->
+
+
+    <!--Body and background color  -->
+
+    <color name="home_background">#f2f5f8</color>
+    <color name="home_background_50_tranp">#E6f2f5f8</color>
+    <color name="banner_background">#f1e9ce</color>
+    <color name="banner_background_light">#56f1e9ce</color>
+
+    <!--  Card color  -->
+
+    <color name="card1">#d4cbe5</color>
+    <color name="card2">#7adccf</color>
+    <color name="card3">#f7c59f</color>
+    <color name="card4">#b8d7f5</color>
 </resources>
