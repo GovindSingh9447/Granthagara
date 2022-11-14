@@ -1,6 +1,7 @@
 
 
-<h1>“College Notes”</h1>
+<h1>“
+Granthagara”</h1>
 
 
 <h2>It is an Educational Android application, in which users get Educational books,<br> Study material, College Notes and even entrance examination notes.</h2> 
