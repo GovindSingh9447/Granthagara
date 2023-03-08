@@ -145,23 +145,23 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
             }
         });
 
-        binding.profile.setOnClickListener(new View.OnClickListener() {
+       /* binding.profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UserDashboard.this, ProfileActivity.class));
                 finish(); 
             }
-        });
+        });*/
 
         //SCHOOL
 
-        binding.uploadSchhol.setOnClickListener(new View.OnClickListener() {
+        /*binding.uploadSchhol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(UserDashboard.this, UploadSchoolDataActivity.class));
                 finish();
             }
-        });
+        });*/
         binding.classAll.setOnClickListener(v->{
             Intent intent=new Intent(UserDashboard.this, ClassActivity.class);
             startActivity(intent);
@@ -194,12 +194,11 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         loadInterView();
 
         //UploadInterview
-       binding.uploadInterview.setOnClickListener(v->{
+      /* binding.uploadInterview.setOnClickListener(v->{
            Intent intent=new Intent(this,UploadInterviewActivity.class);
            startActivity(intent);
            finish();
-       });
-
+       });*/
 
 
         //Hind_Upanyas
@@ -212,13 +211,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         loadHindUpn();
 
 
-
-
-
-
     }
-
-
 
 
     private void navigationDrawer() {
@@ -330,13 +323,19 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
             startActivity(intent);
             return true;
         }
+        if (id== R.id.logout){
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(UserDashboard.this, GetStartedActivity.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }
 
 
         return super.onOptionsItemSelected(item);
 
 
     }
-
 
     //SCHOOL
     private void loadClass() {
@@ -373,8 +372,6 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         });
     }
 
-
-
     //Anime Section Or Manga
     private void loadAnimes() {
         //init arrayList
@@ -409,9 +406,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         });
     }
 
-
     //Interview Section
-
     private void loadInterView() {
         interviewModelArrayList=new ArrayList<>();
 
@@ -523,11 +518,5 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         });
 
     }
-
-
-
-
-
-
 
 }

@@ -33,10 +33,10 @@ public class GetStartedActivity extends AppCompatActivity {
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(GetStartedActivity.this, pairs);
                     startActivity(intent, options.toBundle());
-                    finish();
+
                 } else {
                     startActivity(intent);
-                    finish();
+
                 }
 
 
@@ -55,7 +55,7 @@ public class GetStartedActivity extends AppCompatActivity {
                 ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(GetStartedActivity.this,pairs);
 
                 startActivity(intent,options.toBundle());
-                finish();
+
 
             }
         });

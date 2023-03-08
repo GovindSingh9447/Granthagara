@@ -32,6 +32,7 @@ import com.ranawat.collagenotes.databinding.ActivityLoginBinding;
 public class LoginActivity extends AppCompatActivity {
 
 
+
     //view binding
     private ActivityLoginBinding binding;
 

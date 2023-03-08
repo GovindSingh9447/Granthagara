@@ -12,9 +12,9 @@
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F9F5F5"
+
         android:layout_gravity="start"
-        android:visibility="visible"
+        android:visibility="gone"
         app:headerLayout="@layout/menu_header"
         app:menu="@menu/sidemenu"/>
 
@@ -42,8 +42,7 @@
                 android:id="@+id/app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
                 android:fontFamily="@font/ubuntu_bold"
                 android:text="@string/app_name"
                 android:textSize="24sp" />

@@ -16,6 +16,9 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EntranceAtivity"
+            android:exported="false" />
+        <activity
             android:name="com.ranawat.School.UploadSchoolDataActivity"
             android:exported="false" />
         <activity
