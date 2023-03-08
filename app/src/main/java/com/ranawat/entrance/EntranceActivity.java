@@ -3,8 +3,6 @@ package com.ranawat.entrance;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
-import com.ranawat.collagenotes.R;
 import com.ranawat.collagenotes.databinding.ActivityEntranceBinding;
 
 public class EntranceActivity extends AppCompatActivity {
