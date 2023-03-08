@@ -145,23 +145,23 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
             }
         });
 
-        binding.profile.setOnClickListener(new View.OnClickListener() {
+       /* binding.profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UserDashboard.this, ProfileActivity.class));
                 finish(); 
             }
-        });
+        });*/
 
         //SCHOOL
 
-        binding.uploadSchhol.setOnClickListener(new View.OnClickListener() {
+        /*binding.uploadSchhol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(UserDashboard.this, UploadSchoolDataActivity.class));
                 finish();
             }
-        });
+        });*/
         binding.classAll.setOnClickListener(v->{
             Intent intent=new Intent(UserDashboard.this, ClassActivity.class);
             startActivity(intent);
@@ -194,11 +194,11 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         loadInterView();
 
         //UploadInterview
-       binding.uploadInterview.setOnClickListener(v->{
+      /* binding.uploadInterview.setOnClickListener(v->{
            Intent intent=new Intent(this,UploadInterviewActivity.class);
            startActivity(intent);
            finish();
-       });
+       });*/
 
 
         //Hind_Upanyas
@@ -321,6 +321,13 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         if (id == R.id.policyMenu) {
             Intent intent = new Intent(UserDashboard.this, UserPolicyActivity.class);
             startActivity(intent);
+            return true;
+        }
+        if (id== R.id.logout){
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(UserDashboard.this, GetStartedActivity.class);
+            startActivity(intent);
+            finish();
             return true;
         }
 
