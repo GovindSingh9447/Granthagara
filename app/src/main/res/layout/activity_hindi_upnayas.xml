@@ -7,7 +7,7 @@
     android:backgroundTint="#10FFFFFF"
     android:backgroundTintMode="src_over"
     android:background="@color/home_background"
-    tools:context="com.ranawat.Hindi_Upnayas.HindiUpnayasActivity">
+    tools:context="com.ranawattech.Hindi_Upnayas.HindiUpnayasActivity">
 
     <RelativeLayout
         android:id="@+id/navBar"

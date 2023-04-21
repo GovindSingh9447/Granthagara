@@ -7,7 +7,7 @@
     android:backgroundTint="#10FFFFFF"
     android:backgroundTintMode="src_over"
     android:background="@drawable/backgroundimg"
-    tools:context="com.ranawat.Animes.AnimeViewActivity">
+    tools:context="com.ranawattech.Animes.AnimeViewActivity">
 
     <RelativeLayout
         android:id="@+id/navBar"

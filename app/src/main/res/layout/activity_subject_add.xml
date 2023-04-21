@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/back01"
-tools:context="com.ranawat.Adding_Section.SubjectAddActivity">
+tools:context="com.ranawattech.Adding_Section.SubjectAddActivity">
 
 <RelativeLayout
     android:layout_width="match_parent"

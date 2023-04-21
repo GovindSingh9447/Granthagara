@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundimg"
-    tools:context="com.ranawat.Animes.ChaptersActivity">
+    tools:context="com.ranawattech.Animes.ChaptersActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"

@@ -7,7 +7,7 @@
     android:backgroundTint="#00FFFFFF"
     android:backgroundTintMode="src_over"
     android:background="@color/home_background"
-    tools:context="com.ranawat.School.ClassActivity">
+    tools:context="com.ranawattech.School.ClassActivity">
 
     <RelativeLayout
         android:id="@+id/navBar"

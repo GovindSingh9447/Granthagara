@@ -7,7 +7,7 @@
     android:backgroundTint="#00FFFFFF"
     android:backgroundTintMode="src_over"
     android:background="@color/home_background"
-    tools:context="com.ranawat.entrance.EntranceActivity">
+    tools:context="com.ranawattech.entrance.EntranceActivity">
 
 
     <RelativeLayout

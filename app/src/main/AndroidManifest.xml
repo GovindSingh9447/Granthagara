@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ranawat.collagenotes">
+    package="com.ranawattech.collagenotes">
     <!-- all required Permission -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".MyApplication"
+        android:name="com.ranawattech.collagenotes.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,106 +16,109 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".EntranceAtivity"
+            android:name="com.ranawattech.entrance.UploadEntranceActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.School.UploadSchoolDataActivity"
+            android:name="com.ranawattech.entrance.EntranceActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.School.NotesViewActivity"
+            android:name="com.ranawattech.School.UploadSchoolDataActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.School.NotesActivity"
+            android:name="com.ranawattech.School.NotesViewActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.School.SubjectActivity"
+            android:name="com.ranawattech.School.NotesActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.School.ClassActivity"
+            android:name="com.ranawattech.School.SubjectActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Interview.UploadInterviewActivity"
+            android:name="com.ranawattech.School.ClassActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Interview.InterviewCollectionActivity"
+            android:name="com.ranawattech.Interview.UploadInterviewActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Interview.InterviewNotesViewerActivity"
+            android:name="com.ranawattech.Interview.InterviewCollectionActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Hindi_Upnayas.HindiUpnayasActivity"
+            android:name="com.ranawattech.Interview.InterviewNotesViewerActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Interview.InterviewActivity"
+            android:name="com.ranawattech.Hindi_Upnayas.HindiUpnayasActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Animes.AddChapterActivity"
+            android:name="com.ranawattech.Interview.InterviewActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Animes.AnimeViewActivity"
+            android:name="com.ranawattech.Animes.AddChapterActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Animes.ChaptersActivity"
+            android:name="com.ranawattech.Animes.AnimeViewActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.Animes.AnimesActivity"
+            android:name="com.ranawattech.Animes.ChaptersActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.ranawattech.Animes.AnimesActivity"
             android:exported="false" />
-        <activity android:name=".UserDashboard" />
         <activity
-            android:name=".VerifyOTP"
+            android:name="com.ranawattech.collagenotes.ProfileActivity"
+            android:exported="false" />
+        <activity android:name="com.ranawattech.collagenotes.UserDashboard" />
+        <activity
+            android:name="com.ranawattech.collagenotes.VerifyOTP"
             android:exported="true" />
         <activity
-            android:name=".ForgetPasswordSuccessMessage"
+            android:name="com.ranawattech.collagenotes.ForgetPasswordSuccessMessage"
             android:exported="false" />
         <activity
-            android:name=".SetNewPassword"
+            android:name="com.ranawattech.collagenotes.SetNewPassword"
             android:exported="false" />
         <activity
-            android:name=".MakeSelection"
+            android:name="com.ranawattech.collagenotes.MakeSelection"
             android:exported="false" />
         <activity
-            android:name=".ForgetPassword"
+            android:name="com.ranawattech.collagenotes.ForgetPassword"
             android:exported="false" />
         <activity
-            android:name=".GetStartedActivity"
+            android:name="com.ranawattech.collagenotes.GetStartedActivity"
             android:exported="false" />
         <activity
-            android:name="com.ranawat.message.ChatActivity"
+            android:name="com.ranawattech.message.ChatActivity"
             android:exported="false" />
-        <activity android:name="com.ranawat.Admin_Sections.AdminChatDetailsActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.Admin_Chat_Users_Activity" />
-        <activity android:name="com.ranawat.Admin_Sections.UserListActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.AdminMenuActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.UserSentMessagesActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.UserUploadAdminActivity" />
-        <activity android:name="com.ranawat.Users_Sections.NotesViewUserActivity" />
-        <activity android:name="com.ranawat.Users_Sections.UserPolicyActivity" />
-        <activity android:name="com.ranawat.Users_Sections.UserUploadActivity" />
-        <activity android:name="com.ranawat.Users_Sections.MenuUsersActivity" />
-        <activity android:name="com.ranawat.Users_Sections.NotesUsersActivity" />
-        <activity android:name="com.ranawat.Users_Sections.SubjectUsersActivity" />
-        <activity android:name="com.ranawat.Users_Sections.SemesterUsersActivity" />
-        <activity android:name="com.ranawat.Users_Sections.CourseUsersActivity" />
-        <activity android:name=".NotesViewerAdminActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.NotesAdminActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.SubjectAdminActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.SemesterAdminActivity" />
-        <activity android:name="com.ranawat.Admin_Sections.CourseAdminActivity" />
-        <activity android:name="com.ranawat.Adding_Section.NotesAddActivity" />
-        <activity android:name="com.ranawat.Adding_Section.SubjectAddActivity" />
-        <activity android:name="com.ranawat.Adding_Section.SemesterAddActivity" />
-        <activity android:name="com.ranawat.Adding_Section.CourseAddActivity" />
-        <activity android:name="com.ranawat.Adding_Section.Collage_University_Added_Activity" />
-        <activity android:name=".DashboardAdminActivity" />
-        <activity android:name=".DashboardUserActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".OnBoardingActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.AdminChatDetailsActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.Admin_Chat_Users_Activity" />
+        <activity android:name="com.ranawattech.Admin_Sections.UserListActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.AdminMenuActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.UserSentMessagesActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.UserUploadAdminActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.NotesViewUserActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.UserPolicyActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.UserUploadActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.MenuUsersActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.NotesUsersActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.SubjectUsersActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.SemesterUsersActivity" />
+        <activity android:name="com.ranawattech.Users_Sections.CourseUsersActivity" />
+        <activity android:name="com.ranawattech.collagenotes.NotesViewerAdminActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.NotesAdminActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.SubjectAdminActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.SemesterAdminActivity" />
+        <activity android:name="com.ranawattech.Admin_Sections.CourseAdminActivity" />
+        <activity android:name="com.ranawattech.Adding_Section.NotesAddActivity" />
+        <activity android:name="com.ranawattech.Adding_Section.SubjectAddActivity" />
+        <activity android:name="com.ranawattech.Adding_Section.SemesterAddActivity" />
+        <activity android:name="com.ranawattech.Adding_Section.CourseAddActivity" />
+        <activity android:name="com.ranawattech.Adding_Section.Collage_University_Added_Activity" />
+        <activity android:name="com.ranawattech.collagenotes.DashboardAdminActivity" />
+        <activity android:name="com.ranawattech.collagenotes.DashboardUserActivity" />
+        <activity android:name="com.ranawattech.collagenotes.LoginActivity" />
+        <activity android:name="com.ranawattech.collagenotes.RegisterActivity" />
+        <activity android:name="com.ranawattech.collagenotes.OnBoardingActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.ranawattech.collagenotes.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -125,7 +128,7 @@
         </activity>
 
         <service
-            android:name=".FirebaseMessagingService"
+            android:name="com.ranawattech.collagenotes.FirebaseMessagingService"
             android:exported="true"
             android:permission="TODO"
             tools:ignore="ExportedService">

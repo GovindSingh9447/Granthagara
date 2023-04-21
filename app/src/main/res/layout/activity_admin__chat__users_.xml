@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ranawat.Admin_Sections.Admin_Chat_Users_Activity">
+    tools:context="com.ranawattech.Admin_Sections.Admin_Chat_Users_Activity">
 
 
     <com.google.android.material.tabs.TabLayout

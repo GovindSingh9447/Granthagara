@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back01"
-    tools:context="com.ranawat.Adding_Section.Collage_University_Added_Activity">
+    tools:context="com.ranawattech.Adding_Section.Collage_University_Added_Activity">
 
     <RelativeLayout
         android:layout_width="match_parent"

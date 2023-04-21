@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundimg"
-    tools:context="com.ranawat.School.UploadSchoolDataActivity">
+    tools:context="com.ranawattech.School.UploadSchoolDataActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
